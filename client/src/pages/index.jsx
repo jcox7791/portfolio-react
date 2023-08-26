@@ -1,5 +1,5 @@
 // componets
-import NavBar from "../componets/nav/navBar";
+import NavBar from "../componets/nav";
 
 const Home = () => {
 
