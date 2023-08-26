@@ -1,5 +1,7 @@
 import './App.css'
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// componets
+
 // Pages
 import Home from './pages/index';
 
@@ -7,13 +9,14 @@ function App() {
 
   return (
     <>
-    <Home />
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}>
           </Route>
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
+      {/* Pages */}
+      <Home />
     </>
   )
 }
