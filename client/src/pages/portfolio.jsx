@@ -4,8 +4,8 @@ import PortfolioCard from "../componets/cards/portfolioCard";
 const Portfolio = () => {
     return (
         <>
-        {/* Coding Projects need to map */}
-  
+            {/* Coding Projects need to map */}
+            <PortfolioCard />
         </>
     );
 }
