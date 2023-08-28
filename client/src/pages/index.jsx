@@ -1,11 +1,11 @@
 // componets
-import NavBar from "../componets/nav";
+// import NavBar from "../componets/nav";
 
 const Home = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             <h1>hello Im the Landing Page!</h1>
         </>
     )
