@@ -1,22 +1,27 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// componets
-
 // Pages
-import Home from './pages/index';
+// import About from './pages/about'
+import Home from './pages/home';
+// import Portfolio from './pages/portfolio';
+
 
 function App() {
 
   return (
     <>
+      {/* displaying of pages and routes for navigation call */}
       <BrowserRouter>
         <Routes>
-          {/* Pages and routes for navigation */}
           <Route path="/" element={<Home />}>
           </Route>
+          {/* <Route path="/About" element={<About />}>
+          </Route>
+          <Route path="/portfolio" element={<Portfolio />}>
+          </Route> */}
         </Routes>
       </BrowserRouter>
-  
+
     </>
   )
 }
