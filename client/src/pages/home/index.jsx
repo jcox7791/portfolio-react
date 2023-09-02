@@ -42,7 +42,7 @@ const Home = () => {
         textIndent: "55px"
     }
     const styleCon = {
-        display: "flex"
+        display: "inline-flex"
     }
     const styleImg = {
         boxShadow: '1px 2px 9px #F4AAB9',
@@ -82,8 +82,8 @@ const styleNav={
                     <NavBar style={styleNav} />
                 </Container>
             </Container>
+            {/* Nav Componet */}
             <Container style={styleNav}>
-                    {/* Nav Componet */}
                     <NavBar style={styleNav} />
                 </Container>
             {/* </Item>
