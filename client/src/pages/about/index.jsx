@@ -1,4 +1,9 @@
 import Container from '@mui/material/Container';
+// Icons
+import Diversity3RoundedIcon from '@mui/icons-material/Diversity3Rounded';
+import EmojiObjectsRoundedIcon from '@mui/icons-material/EmojiObjectsRounded';
+import PeopleRoundedIcon from '@mui/icons-material/PeopleRounded';
+
 
 // Images
 
@@ -8,22 +13,43 @@ const About = () => {
     return (
         <>
             <Container>
-                <h1>Well, welcome to my lifes store!</h1>
-                <h2>It may even be captivating and inspiring for some.</h2>
-                <p>So off we go!</p>
+                <p>I am a reliable, quality-focused individual who is very innovative and an optimized solution seeker. Whereas I am very excited to be at this development phase of my new career as a web developer. I am ambitious, adventitious, assiduous, animated, and an alliteration advocate.</p>
             </Container>
             <Container>
-                <p>My life store start in a hospital in Portland, Oregon. In the year, well lets leave thet out, dont want to date myself. My parents bump me up down the west coast from Oregon to California even Alaska. That travaling spirit followed me into my adulthood, due to I have traveled all around the United States and I mean traveled from coast to coast.</p>
+                <EmojiObjectsRoundedIcon />
+                <h2>Crative</h2>
+                <p></p>
+            </Container>
+            <Container>
+                <PeopleRoundedIcon />
+                <h2>United</h2>
+                <p></p>
+            </Container>
+            <Container>
+                <Diversity3RoundedIcon />
+                <h2>Friendly</h2>
+                <p></p>
+            </Container>
+            <Container>
+                <h2>My Experience</h2>
+                <p>
+                    Team Management
+                    Business Development
+                    Fundraising
+                    Microsoft Office
+                    Adobe
+                    HTML5
+                    CSS
+                    Bootstrap
+                    JavaScript
+                    React
+                    Redux
+                    MongoDB
+
+                </p>
             </Container>
             <Container></Container>
-            <Container></Container>
-            <Container></Container>
-            <Container></Container>
-            <Container></Container>
-            <Container></Container>
-            <Container></Container>
-            <Container></Container>
-            <Container></Container>
+
         </>
     );
 }
