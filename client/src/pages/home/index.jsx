@@ -51,10 +51,10 @@ const Home = () => {
         padding: '1em',
         width: "980px",
     }
-const styleNav={
-    marginBottom:"1250px",
-    marginLeft:"300px"
-}
+    const styleNav = {
+        marginBottom: "1250px",
+        marginLeft: "300px"
+    }
 
     return (
         <>
@@ -76,16 +76,12 @@ const styleNav={
                         <Item> */}
                 <Container>
                     <img src={Me1} style={styleImg} alt='James M. Cox Jr.' />
-                </Container>
-                <Container style={styleNav}>
-                    {/* Nav Componet */}
-                    <NavBar style={styleNav} />
-                </Container>
+                </Container>               \
             </Container>
             {/* Nav Componet */}
-            <Container style={styleNav}>
-                    <NavBar style={styleNav} />
-                </Container>
+            <Container>
+                <NavBar style={styleNav} />
+            </Container>
             {/* </Item>
                     </Grid>
                 </Grid>

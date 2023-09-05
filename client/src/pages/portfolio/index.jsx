@@ -1,42 +1,46 @@
-
 import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
-import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
-import PrintIcon from '@mui/icons-material/Print';
-import SaveIcon from '@mui/icons-material/Save';
-import ShareIcon from '@mui/icons-material/Share';
-import SpeedDial from '@mui/material/SpeedDial';
-import SpeedDialAction from '@mui/material/SpeedDialAction';
-import SpeedDialIcon from '@mui/material/SpeedDialIcon';
+// Components
+import PortfolioCard from '../../componets/cards/portfolioCard';
 
+
+const itemData = [
+    {
+        "alt": "img of a clock",
+        "href": "https://github.com/jcox7791/Clock",
+        "src": "../../images/screenShots/clock.png",
+        "title": "World Clock",
+        "text": "This Web application was designed to give you "
+    },
+    {
+        "alt": "img of sinner & saints",
+        "href": "https://github.com/jcox7791/Sinner---Saints",
+        "src": "../../images/screenShots/sinner&saints.png",
+        "title": "Sinner & Saints",
+        "text": "This site was developed to showcase a restaurants available cuisene and events at their fine establishment. Hence, allowing potential customers the ability to browse by meal, while also seeing more detailed information    about a selected dish. Therefore, not to be limited to but including a full description of the pricing, calories, rating, drink pairings, and allergies. Additionally, a potential customer may rate dishs and or preview the restaurants reviews and possibly leaving one of their own."
+    },
+    {
+        "alt": "",
+        "href": "",
+        "src": "",
+        "title": "",
+        "text": ""
+    }
+];
+console.log(itemData + "im the item data!")
 
 const Portfolio = () => {
-
-    const actions = [
-        { icon: <FileCopyIcon />, name: 'Copy' },
-        { icon: <SaveIcon />, name: 'Save' },
-        { icon: <PrintIcon />, name: 'Print' },
-        { icon: <ShareIcon />, name: 'Share' },
-    ];
-
     return (
         <>
             <Container>
-                <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
-                    <SpeedDial
-                        ariaLabel="SpeedDial basic example"
-                        sx={{ position: 'absolute', bottom: 16, right: 16 }}
-                        icon={<SpeedDialIcon />}
-                    >
-                        {actions.map((action) => (
-                            <SpeedDialAction
-                                key={action.name}
-                                icon={action.icon}
-                                tooltipTitle={action.name}
-                            />
-                        ))}
-                    </SpeedDial>
-                </Box>
+                {itemData.map((item) => (
+                    <PortfolioCard key={item}
+                        tile={item.title}
+                        img={item.src}
+                        alt={item.alt}
+                        text={item.text}
+                        href={item.href}
+                    />
+                ))}
             </Container>
         </>
     );
