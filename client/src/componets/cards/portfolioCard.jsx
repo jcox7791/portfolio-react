@@ -1,34 +1,31 @@
-// import Card from '@mui/material/Card';
-// import CardActionArea from '@mui/material/CardActionArea';
-// import CardContent from '@mui/material/CardContent';
+import Card from '@mui/material/Card';
+
+import CardContent from '@mui/material/CardContent';
 // import CardHeader from '@mui/material/CardHeader';
 // import CardMedia from '@mui/material/CardMedia';
 // import Typography from '@mui/material/Typography';
-// Page
-// import Portfolio from '../../pages/portfolio';
 
-export default function PortfolioCard(props) {
-    const {title} = props.title;
-    console.log(title)
+const PortfolioCard = (props) => {
+    // const { title } = props.title;
+    console.log(props + "I am the card")
+    const styleH2 = {
+        color: "pink"
+    }
     return (
         <>
-        <h2>{title}</h2>
-            {/* <Card>
-                <CardActionArea>
-                    <CardHeader>
-                        
-                    </CardHeader>
-                    <CardMedia>
-                        <img src="" alt="" />
-                    </CardMedia>
-                    <CardContent>
-                        <Typography></Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-            <CardActionArea>
 
-            </CardActionArea> */}
+            <Card>
+                <header>
+                    <h2 style={styleH2}>{props.title}</h2>
+                </header>
+               
+                    <img src="" alt="" />
+               
+             
+            </Card>
+         
         </>
     );
 }
+
+export default PortfolioCard;

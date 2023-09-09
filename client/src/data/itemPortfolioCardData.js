@@ -21,4 +21,7 @@ const itemData = [
         "text": ""
     }
 ];
+
+export default itemData;
+
 console.log(itemData + "im the item data!")
