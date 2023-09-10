@@ -6,19 +6,20 @@ import Me1 from '../../images/me/me1.jpg';
 const Home = () => {
     // CSS
     const style = {
-        font: "150px Copperplate, Papyrus, fantasy",
-        marginBottom: "-150px ",
+        font: "100px Copperplate, Papyrus, fantasy",
+        marginBottom: "",
         marginLeft: "150px"
     }
     const style1 = {
         color: "greenyellow",
-        font: "240px uppercase Copperplate, Papyrus, fantasy",
-        marginLeft: "150px"
-
+        font: "200px uppercase Copperplate, Papyrus, fantasy",
+        marginLeft: "150px",
+        marginTop: "-100px"
     }
     const style2 = {
-        font: "60px Copperplate, Papyrus, fantasy",
-        marginTop: "-200px",
+        font: "50px Copperplate, Papyrus, fantasy",
+        marginTop: "-150px",
+        marginRight:"-350px",
         marginLeft: "150px",
         textIndent: "55px"
     }
@@ -26,11 +27,12 @@ const Home = () => {
         display: "inline-flex"
     }
     const styleImg = {
-        boxShadow: '5px 15px 50px #2929bc',
-        marginTop: "300px",
-        marginLeft: "350px",
-        padding: '1em',
-        width: "980px",
+        boxShadow: '5px 15px 150px #2929bc',
+        marginTop: "100px",
+        marginBottom:"200px",
+        marginLeft: "850px",
+        padding: '2em',
+        width: "1000px",
     }
 
 
