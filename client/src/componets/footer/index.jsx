@@ -1,26 +1,23 @@
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+// Data
+import FooterData from '../../data/itemFooterData';
 // Images
-import GetHub from '../../images/icons/github.png';
-import Indeed from '../../images/icons/indeed-logo.webp'
+// import GetHub from '../../images/icons/github-mark-white.png';
 
 
-function createData(social, design, contact) {
-    return { social, design, contact }
-}
-// Images
-const iconImages = [Indeed, GetHub]
-// console.log(iconIndeed, "I am social indeed icons")
 
-const rows = [
-    createData(iconImages, 'Creative Cyber Designs',
-        'jcox.jc77@gmail.com')
-];
-console.log(rows)
+
+
+
+
+
 
 const FooterBar = () => {
     // CSS
@@ -40,6 +37,7 @@ const FooterBar = () => {
         fontSize: "25px",
         textAlign: "center"
     }
+
     return (
         <TableContainer style={tableContainerSytle}>
             {/* <img src={socialIcons} alt="" /> */}
@@ -52,16 +50,31 @@ const FooterBar = () => {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {rows.map((row) => (
-                        <TableRow key={row.name}>
-                            <TableCell style={tableCellDesign}>
-                                {row.social}
+                    <TableRow >
+                        <TableCell style={tableCellDesign}>
+                            <ImageList>
+                                {FooterData.map((item) => (
+                                    <ImageListItem key={item.iconImgs.src}>
+                                        <img
+                                            src={item.iconImgs.src}
+                                            srcSet={item.iconImgs.src}
+                                            alt={item.iconImgs.title}
+                                        />
+                                    </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </TableCell>
+                        <TableCell style={tableCellDesign}></TableCell>
+                        {FooterData.map((item) => (
+                            <TableCell key={item.contact} style={tableCellDesign}>
+                                <a href="mailto: jcox.jc77@gmail.com ">
+                                    {item.contact.email}
+                                </a>
                             </TableCell>
-                            <TableCell style={tableCellDesign}>{row.design}</TableCell>
-                            <TableCell style={tableCellDesign}><a href="mailto:/">{row.contact}</a></TableCell>
-                        </TableRow>
+                        ))}
+                    </TableRow>
 
-                    ))}
+
                 </TableBody>
             </Table>
         </TableContainer>
