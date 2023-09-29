@@ -1,13 +1,20 @@
-import Container from '@mui/material/Container';
+import Container from '@mui/material/Container'
+// CSS
+import './index.css'
 // Data
 import AboutData from '../../data/itemAboutData'
 // Images
-import Me1 from '../../images/me/me1.jpg';
+import Me1 from '../../images/me/me1.jpg'
 
 const About = () => {
-    // CSS   
+    // CSS 
+    const styleConIntro={
+        display: "flex"
+    }  
     const styleCon1 = {
-        marginTop: "-100px"
+        marginTop: "-100px",
+        marginLeft:"-650px"
+        
     }
     const styleConBackground = {
         display: "flex"
@@ -26,6 +33,7 @@ const About = () => {
         color: "greenyellow",
         font: "150px uppercase Copperplate, Papyrus, fantasy",
         marginBottom: "50px"
+
     }
     const styleIntro = {
         font: "45px uppercase Copperplate, Papyrus, fantasy",
@@ -58,48 +66,87 @@ const About = () => {
     }
     return (
         <>
-            <Container>
+            <Container className='styleConIntro'
+            style={styleConIntro}
+            >
+        
                 {AboutData.map((item) => (
-                    <Container key={item.intro} style={styleCon1}>
-                        <p style={styleAboutTitle}>{item.intro.title}</p>
-                        <p style={styleIntro}>{item.intro.text1}</p>
-                        <p style={styleIntro}>{item.intro.text2}</p>
-                        <p style={styleIntro1}>{item.intro.text3}</p>
+                    <Container key={item.intro} className='styleCon1'
+                     style={styleCon1}
+                     >
+                        <p className="styleAboutTitle" 
+                        style={styleAboutTitle}
+                        >{item.intro.title}</p>
+                        <p className='styleIntro'
+                         style={styleIntro}
+                         >{item.intro.text1}</p>
+                        <p className='styleIntro' 
+                        style={styleIntro}
+                        >{item.intro.text2}</p>
+                        <p className='styleIntro1'
+                         style={styleIntro1}
+                         >{item.intro.text3}</p>
                     </Container>
 
                 ))}
                 <Container>
-                    <img src={Me1} style={styleImg} alt='image of James M. Cox Jr.' />
+                    <img src={Me1} className='styleImg'
+                     style={styleImg}
+                      alt='image of James M. Cox Jr.' />
                 </Container>
             </Container>
             {/* Background Container */}
-            <Container style={styleConBackground}>
+            <Container className='styleConBackground'
+             style={styleConBackground}
+             >
                 {/* Experience Container */}
                 {AboutData.map((item) => (
-                    <Container key={item.experience} style={styleConExperience}>
-                        <h2 style={styleElementsH2}>{item.experience.title}</h2>
-                        <p style={styleElementText}>{item.experience.text}</p>
-                        <p style={styleElementText}>{item.experience.text1}</p>
-                        <p style={styleElementText}>{item.experience.text2}</p>
+                    <Container key={item.experience} className='styleConExperience' 
+                    style={styleConExperience}
+                    >
+                        <h2 className='styleElementsH2'
+                         style={styleElementsH2}
+                         >{item.experience.title}</h2>
+                        <p className='styleElementText'
+                         style={styleElementText}
+                         >{item.experience.text}</p>
+                        <p className='styleElementText'
+                         style={styleElementText}
+                         >{item.experience.text1}</p>
+                        <p className='styleElementText' 
+                        style={styleElementText}
+                        >{item.experience.text2}</p>
                     </Container>
                 ))}
                 {/* Creativity Container */}
                 {AboutData.map((item) => (
                     <Container key={item.creativity}>
-                        <h2 style={styleElementsH2}>{item.creativity.title}</h2>
+                        <h2 className='styleElementsH2'
+                         style={styleElementsH2}
+                         >{item.creativity.title}</h2>
                     </Container>
                 ))}
                 {/* Skills Container */}
                 {AboutData.map((item) => (
-                    <Container key={item.skills} style={styleConSkills}>
-                        <h2 style={styleElementsH2}>{item.skills.title}</h2>
-                        <p style={styleElementText}>{item.skills.text}</p>
+                    <Container key={item.skills} className='styleConSkills'
+                     style={styleConSkills}
+                    >
+                        <h2 className='styleElementsH2'
+                         style={styleElementsH2}
+                         >{item.skills.title}</h2>
+                        <p className='styleElementText' 
+                        style={styleElementText}
+                        >{item.skills.text}</p>
                         {/* Language & Front-End Libraries Container */}
-                        <Container style={styleConSLangFrontEnd}>
+                        <Container className='styleConSLangFrontEnd'
+                         style={styleConSLangFrontEnd}
+                         >
                             {/* Language Container */}
                             {AboutData.map((item) => (
                                 <Container key={item.skills.mySkills}>
-                                    <h3 style={styleElementsH3}>{item.skills.mySkills.languages.title}</h3>
+                                    <h3 className='styleElementsH3'
+                                     style={styleElementsH3}
+                                     >{item.skills.mySkills.languages.title}</h3>
                                     <ul>
                                         <li>{item.skills.mySkills.languages.html}</li>
                                         <li>{item.skills.mySkills.languages.css}</li>
@@ -115,7 +162,9 @@ const About = () => {
                             {/* Front-End Libraries Container */}
                             {AboutData.map((item) => (
                                 <Container key={item.skills.mySkills}>
-                                    <h3 style={styleElementsH3}>{item.skills.mySkills.frontEndLibraries.title}</h3>
+                                    <h3 className='styleElementsH3'
+                                     style={styleElementsH3}
+                                     >{item.skills.mySkills.frontEndLibraries.title}</h3>
                                     <ul>
                                         <li>{item.skills.mySkills.frontEndLibraries.bootstrap}</li>
                                         <li>{item.skills.mySkills.frontEndLibraries.material}</li>

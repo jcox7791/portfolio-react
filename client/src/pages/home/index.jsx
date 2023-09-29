@@ -41,8 +41,6 @@ const Home = () => {
         padding: '2em',
         width: "1000px"
     }
-
-
     return (
         <>           
             <Container style={styleCon}>
