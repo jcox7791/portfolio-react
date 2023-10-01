@@ -1,0 +1,64 @@
+/* .introCon{
+
+} */
+
+.title {
+    color: greenyellow;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 150px;
+    margin-right: 600px;
+    margin-bottom: 50px;
+    
+
+}
+
+.text {
+    font: 45px uppercase Copperplate, Papyrus, fantasy;
+    margin-top: 40px;
+    /* margin-right: 900px; */
+    text-indent: 55px;
+    /* padding-right: -1950px; */
+}
+
+.text1 {
+    color: red;
+    font: 50px uppercase Copperplate, Papyrus, fantasy;
+    text-indent: "55px";
+    animation-name: text1Intro;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text1Intro {
+    
+}
+
+.img {
+    box-shadow: 5px 15px 150px #2929bc;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left: 850px;
+    /* padding: '2em', */
+    width: 1000px;
+}
+
+.experienceCon {
+    margin-left: -550px;
+}
+
+.elementsH2 {
+    color: greenyellow;
+    font: 40px uppercase Copperplate, Papyrus, fantasy;
+    padding-left: 500px;
+    padding-right: 500px;
+    text-align: center;
+}
+
+/* .creativityCon{} */
+
+/* .skillsCon {} */
+
+.elementsH3 {
+    color: greenyellow;
+    font: 30px uppercase Copperplate, Papyrus, fantasy;
+}
