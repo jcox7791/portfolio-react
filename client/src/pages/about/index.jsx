@@ -1,11 +1,11 @@
-import Container from '@mui/material/Container'
+import Container from '@mui/material/Container';
 // CSS
-import styles from '../../styles/css/about.module.css'
+import styles from '../../styles/css/about.module.css';
 // console.log(styles, "Im CSS File!");
 // Data
-import AboutData from '../../data/itemAboutData'
+import AboutData from '../../data/itemAboutData';
 // Images
-import Me1 from '../../images/me/me1.jpg'
+import Me1 from '../../images/me/me1.jpg';
 
 const About = () => {
     return (
@@ -79,7 +79,6 @@ const About = () => {
                     </Container>
                 ))}
             </Container>
-
         </>
     );
 }

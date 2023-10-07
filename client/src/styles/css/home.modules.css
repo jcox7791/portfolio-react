@@ -1,0 +1,47 @@
+.test{
+    color: aqua;
+    font-size: 150px;
+}
+.con {
+    display: inline-flex;
+}
+
+.con1 {
+    margin-top: 60px;
+}
+
+.introHeader {
+    font: 100px Copperplate, Papyrus, fantasy;
+    /* marginBottom: ; */
+    margin-left: 150px;
+}
+
+.introHeader1 {
+    color: greenyellow;
+    font: 200px uppercase Copperplate, Papyrus, fantasy;
+    margin-top: -100px;
+    margin-left: 150px;
+    
+}
+
+.introHeader2 {
+    font: 50px Copperplate, Papyrus, fantasy;
+    /* margin-top -150px; */
+    margin-right: -350px;
+    margin-left: 150px;
+    text-indent: 55px;
+}
+
+.span {
+    color: greenyellow;
+        font-weight: bold;
+}
+
+.img{
+    box-shadow: 5px 15px 150px #2929bc;
+        margin-top: 100px;
+        margin-bottom:200px;
+        margin-left: 850px;
+        padding: 2em;
+        width: 1000px;
+}
