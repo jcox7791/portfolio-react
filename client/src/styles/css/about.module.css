@@ -1,7 +1,6 @@
 .title {
     color: greenyellow;
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 150px;
+    font:150px Copperplate, Papyrus, fantasy;
     margin-right: 600px;
     margin-bottom: 50px;
     

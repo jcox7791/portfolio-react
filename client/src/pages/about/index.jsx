@@ -11,7 +11,7 @@ const About = () => {
     return (
         <>
             {/* Intro Container */}
-            <Container style={{ display: 'flex', marginTop:'100px', marginLeft:'450px'}}>
+            <Container style={{ display: 'flex', marginTop: '100px', marginLeft: '450px' }}>
                 {AboutData.map((item) => (
                     <Container className={styles.introCon} key={item.intro} >
                         <p className={styles.title}>{item.intro.title}</p>
@@ -21,11 +21,11 @@ const About = () => {
                     </Container>
                 ))}
                 <Container>
-                    <img src={Me1} className={styles.img} alt='image of James M. Cox Jr.' />
+                    <img className={styles.img} src={Me1} alt='image of James M. Cox Jr.' />
                 </Container>
             </Container>
             {/* Background Container */}
-            <Container style={{ display: 'flex', marginLeft:'-5px' }}>
+            <Container style={{ display: 'flex', marginLeft: '-5px' }}>
                 {/* Experience Container */}
                 {AboutData.map((item) => (
                     <Container key={item.experience} className={styles.experienceCon}>
