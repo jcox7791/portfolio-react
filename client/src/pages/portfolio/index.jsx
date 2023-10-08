@@ -1,6 +1,8 @@
 import Container from '@mui/material/Container';
 // Components
 import PortfolioCard from '../../componets/cards/portfolioCard';
+// CSS
+import styles from '../../styles/css/portfolio.module.css'
 // Data
 import itemCardData from '../../data/itemPortfolioCardData';
 

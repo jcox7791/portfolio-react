@@ -43,15 +43,14 @@ const About = () => {
                 ))}
                 {/* Skills Container */}
                 {AboutData.map((item) => (
-
                     <Container key={item.skills} className={styles.skillsCon}>
                         <h2 className={styles.elementsH2}>{item.skills.title}</h2>
                         <p className={styles.text}>{item.skills.text}</p>
                         {/* Language & Front-End Libraries Container */}
-                        <Container className={styles}>
+                        <Container style={{ display: 'flex'}}>
                             {/* Language Container */}
                             {AboutData.map((item) => (
-                                <Container key={item.skills.mySkills}>
+                                <Container className={styles.mySkillsCon} key={item.skills.mySkills}>
                                     <h3 className={styles.elementsH3}>{item.skills.mySkills.languages.title}</h3>
                                     <ul>
                                         <li>{item.skills.mySkills.languages.html}</li>
@@ -67,7 +66,7 @@ const About = () => {
                             ))}
                             {/* Front-End Libraries Container */}
                             {AboutData.map((item) => (
-                                <Container key={item.skills.mySkills}>
+                                <Container className={styles.mySkillsCon} key={item.skills.mySkills}>
                                     <h3 className={styles.elementsH3}>{item.skills.mySkills.frontEndLibraries.title}</h3>
                                     <ul>
                                         <li>{item.skills.mySkills.frontEndLibraries.bootstrap}</li>

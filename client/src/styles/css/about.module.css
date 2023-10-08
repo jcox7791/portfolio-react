@@ -20,12 +20,13 @@
     font: 50px uppercase Copperplate, Papyrus, fantasy;
     text-indent: "55px";
     animation-name: text1Intro;
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
 @keyframes text1Intro {
-    
+    from{color: yellow;}
+    to{color:red;}
 }
 
 .img {
@@ -49,11 +50,12 @@
     text-align: center;
 }
 
-/* .creativityCon{} */
 
-/* .skillsCon {} */
+.mySkillsCon {
+    font: 30px uppercase Copperplate, Papyrus, fantasy;
+}
 
 .elementsH3 {
     color: greenyellow;
-    font: 30px uppercase Copperplate, Papyrus, fantasy;
+    font: 35px uppercase Copperplate, Papyrus, fantasy;
 }

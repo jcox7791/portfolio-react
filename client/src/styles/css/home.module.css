@@ -1,15 +1,13 @@
-/* .con {
-  display: flex;
-} */
-
-.con1 {
-    margin-top: 60px;    
+.con {
+    display: flex;
 }
-/* .con2{
 
-} */
+.introCon {
+    margin-top: 60px;
+}
+
 .intro {
-    font:100px  Copperplate, Papyrus, fantasy;
+    font: 100px Copperplate, Papyrus, fantasy;
     /* marginBottom: ; */
     margin-left: 150px;
 }
@@ -24,7 +22,7 @@
 
 .intro2 {
     font: 50px Copperplate, Papyrus, fantasy;
-    /* margin-top -150px; */
+    margin-top: -150px;
     margin-right: -350px;
     margin-left: 150px;
     text-indent: 55px;
@@ -35,9 +33,11 @@
     font-weight: bold;
 }
 
+/* .imgCon{
+
+} */
 .img {
     box-shadow: 5px 15px 150px #2929bc;
-    margin-top: 100px;
     margin-bottom: 200px;
     margin-left: 850px;
     padding: 2em;
