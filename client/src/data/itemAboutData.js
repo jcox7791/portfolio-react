@@ -13,14 +13,15 @@ const itemAboutData = [
             "text2": ""
         },
         "creativity": {
-            "title": "Crativity"
+            "title": "Crativity",
+            "text": "I was brought into this world to be a designer, it’s has runs through from the day I was born. In where I have spent most of my life dedicated to creating wonderful masterpieces. Therefore, I have enjoyed for over 20 plus years the ability to dominate the tattoo world and whatever it could throw at me."
         },
         "skills": {
             "title": "My Skills",
             "text": "My Skills are not just limited to Microsoft Office and Adobe. I aslo come with a veriety of coding languages and front-end library qualification such as: ",
             "mySkills": {
                 "languages": {
-                    "title":"Languages",
+                    "title": "Languages",
                     "html": "HTML5",
                     "css": "CSS",
                     "javaScript": "JavaScript",
@@ -31,7 +32,7 @@ const itemAboutData = [
                     "mongoDB": "MongoDB"
                 },
                 "frontEndLibraries": {
-                    "title":"Front-End Libraries",
+                    "title": "Front-End Libraries",
                     "bootstrap": "Bootstrap",
                     "material": "Material UI"
                 }

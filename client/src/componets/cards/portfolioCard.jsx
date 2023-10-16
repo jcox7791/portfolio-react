@@ -11,9 +11,7 @@ import Typography from '@mui/material/Typography';
 import ShareIcon from '@mui/icons-material/Share';
 
 
-const PortfolioCard = (props) => {
-    // console.log(props + "I am the card");
-
+const PortfolioCard = () => {
     // CSS
     const cardHeader = {
         color: "#2929bc",
@@ -30,34 +28,38 @@ const PortfolioCard = (props) => {
     }
     // Card Componets
     const card = (
+    
+
         <React.Fragment>
             <CardContent>
                 {/* Header Content */}
                 <Typography style={cardHeader}>
-                    {props.title}
+                    {}
                 </Typography>
                 {/* Image Coontent */}
+                
                 <CardMedia
                     component="img"
                     height="194"
-                    src={props.image}
-                    alt={props.alt}
+                    src="../../images/screenShots/clock.png"
+                    alt=""
                 />
                 {/* Text Content */}
                 <Typography style={typographyStyle} >
-                    {props.text}
+                    {}
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button href={props.href}>
+                <Button href="">
                     <ShareIcon style={shareIconStyle}></ShareIcon>
                 </Button>
             </CardActions>
         </React.Fragment>
-    );
+            );
 
     return (
         <>
+            <img src="../../images/screenShots/clock.png" alt="" />
             <Box sx={{ minWidth: 275 }}>
                 <Card style={cardStyle} >{card}</Card>
             </Box>

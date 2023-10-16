@@ -39,6 +39,7 @@ const About = () => {
                 {AboutData.map((item) => (
                     <Container key={item.creativity} className={styles.creativityCon}>
                         <h2 className={styles.elementsH2}>{item.creativity.title}</h2>
+                        <p className={styles.text}>{item.creativity.text}</p>
                     </Container>
                 ))}
                 {/* Skills Container */}
